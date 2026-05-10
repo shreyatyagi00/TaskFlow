@@ -48,7 +48,7 @@ function Dashboard() {
 
       <Sidebar />
 
-      <div className="flex-1 bg-gray-100 min-h-screen">
+      <div className="flex-1 min-h-screen bg-[radial-gradient(circle_at_top_right,_#dbeafe,_#bfdbfe,_#93c5fd)]">
 
         <Navbar />
 
@@ -58,22 +58,22 @@ function Dashboard() {
             Dashboard
           </h1>
 
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            <div className="bg-white p-6 rounded shadow">
-
+            <div className="relative overflow-hidden bg-white/70 backdrop-blur-md p-8 rounded-[30px] shadow-xl border border-white/40 hover:-translate-y-2 transition duration-300">
+            <div className="absolute -bottom-10 left-0 w-full h-24 bg-blue-200/30 rounded-[100%]"></div>
               <h2 className="text-xl font-bold">
                 Total Tasks
               </h2>
 
-              <p className="text-3xl mt-3">
+              <p className="text-3xl mt-3 text-blue-500">
                 {tasks.length}
               </p>
 
             </div>
 
-            <div className="bg-white p-6 rounded shadow">
-
+             <div className="relative overflow-hidden bg-white/70 backdrop-blur-md p-8 rounded-[30px] shadow-xl border border-white/40 hover:-translate-y-2 transition duration-300">
+            <div className="absolute -bottom-10 left-0 w-full h-24 bg-green-200/30 rounded-[100%]"></div>
               <h2 className="text-xl font-bold">
                 Completed
               </h2>
@@ -84,8 +84,8 @@ function Dashboard() {
 
             </div>
 
-            <div className="bg-white p-6 rounded shadow">
-
+            <div className="relative overflow-hidden bg-white/70 backdrop-blur-md p-8 rounded-[30px] shadow-xl border border-white/40 hover:-translate-y-2 transition duration-300">
+            <div className="absolute -bottom-10 left-0 w-full h-24 bg-yellow-200/30 rounded-[100%]"></div>
               <h2 className="text-xl font-bold">
                 Pending
               </h2>
@@ -96,8 +96,8 @@ function Dashboard() {
 
             </div>
 
-            <div className="bg-white p-6 rounded shadow">
-
+           <div className="relative overflow-hidden bg-white/70 backdrop-blur-md p-8 rounded-[30px] shadow-xl border border-white/40 hover:-translate-y-2 transition duration-300">
+            <div className="absolute -bottom-10 left-0 w-full h-24 bg-red-200/30 rounded-[100%]"></div>
               <h2 className="text-xl font-bold">
                 Overdue
               </h2>

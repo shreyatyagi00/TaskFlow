@@ -61,14 +61,18 @@ navigate("/");
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#1d4ed8] relative overflow-hidden px-2">
+        <div className="absolute top-[-120px] left-[-120px] w-[350px] h-[350px] bg-blue-500 opacity-30 rounded-full blur-3xl"></div>
 
+<div className="absolute bottom-[-120px] right-[-120px] w-[350px] h-[350px] bg-indigo-600 opacity-30 rounded-full blur-3xl"></div>
+
+<div className="absolute top-[40%] left-[45%] w-[250px] h-[250px] bg-cyan-400 opacity-20 rounded-full blur-3xl"></div>
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-8 rounded shadow w-96"
+        className="relative z-10 w-full max-w-[460px] bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[40px] shadow-[0_20px_70px_rgba(0,0,0,0.45)] px-6 py-10"
       >
 
-        <h2 className="text-3xl font-bold mb-6 text-center">
+        <h2 className="text-3xl text-gray-500 font-bold mb-6 text-center">
           Register
         </h2>
 
@@ -76,7 +80,7 @@ navigate("/");
           type="text"
           name="name"
           placeholder="Enter Name"
-          className="w-full border p-3 mb-4 rounded"
+          className="w-full bg-white/10 border border-white/10 focus:border-blue-400 focus:ring-4 focus:ring-blue-500/30 outline-none px-6 py-4 rounded-2xl mb-5 text-[16px] text-white placeholder:text-gray-300 shadow-lg transition-all duration-300"
           onChange={handleChange}
         />
 
@@ -84,7 +88,7 @@ navigate("/");
           type="email"
           name="email"
           placeholder="Enter Email"
-          className="w-full border p-3 mb-4 rounded"
+          className="w-full bg-white/10 border border-white/10 focus:border-blue-400 focus:ring-4 focus:ring-blue-500/30 outline-none px-6 py-4 rounded-2xl mb-5 text-[16px] text-white placeholder:text-gray-300 shadow-lg transition-all duration-300"
           onChange={handleChange}
         />
 
@@ -92,28 +96,34 @@ navigate("/");
           type="password"
           name="password"
           placeholder="Enter Password"
-          className="w-full border p-3 mb-4 rounded"
+          className="w-full bg-white/10 border border-white/10 focus:border-blue-400 focus:ring-4 focus:ring-blue-500/30 outline-none px-6 py-4 rounded-2xl mb-5 text-[16px] text-white placeholder:text-gray-300 shadow-lg transition-all duration-300"
           onChange={handleChange}
         />
 
         <select
-          name="role"
-          className="w-full border p-3 mb-4 rounded"
-          onChange={handleChange}
-        >
+  name="role"
+  onChange={handleChange}
+  className="w-full bg-white/10 border border-white/10 focus:border-blue-400 focus:ring-4 focus:ring-blue-500/30 outline-none px-6 py-4 rounded-2xl mb-5 text-[16px] text-white shadow-lg transition-all duration-300"
+>
 
-          <option value="member">
-            Member
-          </option>
+  <option
+    value="member"
+    className="bg-[#0f172a] text-white"
+  >
+    Member
+  </option>
 
-          <option value="admin">
-            Admin
-          </option>
+  <option
+    value="admin"
+    className="bg-[#0f172a] text-white"
+  >
+    Admin
+  </option>
 
-        </select>
+</select>
 
         <button
-          className="w-full bg-blue-500 text-white p-3 rounded"
+          className="w-full bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-700 hover:scale-[1.02] hover:shadow-[0_10px_35px_rgba(37,99,235,0.45)] transition-all duration-300 text-white py-4 rounded-2xl font-bold text-lg tracking-wide mt-2"
         >
           Register
         </button>
