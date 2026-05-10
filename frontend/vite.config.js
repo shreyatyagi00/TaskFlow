@@ -7,4 +7,12 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+
+  server: {
+    host: '0.0.0.0',
+  },
+
+  preview: {
+    allowedHosts: ['taskflow-production-1252.up.railway.app']
+  }
 })
