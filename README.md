@@ -39,7 +39,7 @@ Frontend:
 -React.js
 -Axios
 -React Router DOM
--CSS
+-Tailwind CSS
 
 Backend:
 
